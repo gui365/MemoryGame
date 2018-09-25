@@ -57,3 +57,34 @@ h1, h2 {
 .wrapper {
   width: 80%;
 }
+
+.score {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* MODAL */
+.wrapper-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-modal, .score-modal {
+  font-size: 10rem;
+  color: yellowgreen;
+  font-family: "Treasure", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 5px black;
+}
+
+.score-modal {
+  font-size: 3rem;
+  color: white;
+}
