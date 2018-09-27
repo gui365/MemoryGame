@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Characters from "../Characters/Characters.js"
-import Modal from "../Modal/Modal.js"
+import Characters from "../Characters/Characters.js";
+import Modal from "../Modal/Modal.js";
+import Header from "../Header/Header.js"
 import characters from "../../characters.json";
 import './App.css';
 
@@ -56,20 +57,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header flex">
-          <div className="flex align-center">
-            <img src="./images/logo.png" className="logo" alt="logo" />
-            <h1 className="App-title">Memory Game</h1>
-          </div>
-          <div className="flex align-center flex-column">
-            <div className="flex align-center">
-              <h2>Your Score: </h2><span className="score" id="current-score">{this.state.currentScore}</span>
-            </div>
-            <div className="flex align-center">
-              <h2>High Score: </h2><span className="score" id="high-score">{this.state.highScore}</span>
-            </div>
-          </div>
-        </header>
+        <Header currentScore={this.state.currentScore} highScore={this.state.highScore}/>
         <main className="flex justify-center">
           <div className="wrapper">
             {

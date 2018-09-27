@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./Characters.css";
 
 const Characters = ({ id, image, selected, checkWinLose }) => (
